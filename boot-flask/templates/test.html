@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block title %}This is an example page{% endblock %}
+{% block styling %}
+  {{ super() }}
+  <style>
+    h1 {
+      color: red;
+    }
+  </style>
+{% endblock %}
+
+{% block content %}
+  <div class="jumbotron">
+    <h1>Welcome to my website!</h1>
+    <p>This is the home page.</p>
+    <a class="btn btn-primary" href="{{ url_for('home') }}">Go back Home</a>
+  <h1>Hello, Bootstrap</h1>
+{% endblock %}
